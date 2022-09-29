@@ -5,13 +5,17 @@ Fonts are separated by a & */
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #0e70a5;
-  --secondary-color: #474747;
-  --accent1-color: #f4dca4;
-  --accent2-color: white;
+  --primary-color: #FFB629;
+  --secondary-color: #F3F3D7;
+  --accent1-color: #DCF2DD;
+  --accent2-color: #FF6634;
+  --accent3-color: #398897;
+  --accent4-color: #FBBBF7;
+  --accent5-color: #D4C039;
+  --accent6-color: white;
 
   /* change the values below to your chosen font(s) */
-  --heading-font: Merriweather;
+  --heading-font:  font-family: "Arial Rounded MT Bold"; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.399999618530273px; } h3 { font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.399999618530273px; } p { font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.571430206298828px; ;
   --paragraph-font: Barlow, Helvetica, sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
@@ -85,6 +89,9 @@ p {
   width: 25%;
   height: 3em;
 }
+table {
+  table-layout: fixed ; width: 100%;
+}
 .primary {
   background-color: var(--primary-color);
 }
@@ -96,6 +103,18 @@ p {
 }
 .accent2 {
   background-color: var(--accent2-color);
+}
+.accent3{
+  background-color: var(--accent3-color);
+}
+.accent4{
+  background-color: var(--accent4-color);
+}
+.accent5{
+  background-color: var(--accent5-color);
+}
+.accent6{
+  background-color: var(--accent6-color);
 }
 p.colored {
   background-color: var(--paragraph-background-color);
