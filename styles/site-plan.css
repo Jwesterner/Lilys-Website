@@ -1,6 +1,6 @@
 /* if you are using any Google fonts change the font names below to your fonts. 
 Any spaces in your font name should be replaced with a +. 
-Fonts are separated by a & */
+Fonts are separated by a | */
 @import url("https://fonts.googleapis.com/css2?family=Barlow&family=Merriweather:wght@300&display=swap");
 
 :root {
@@ -15,25 +15,26 @@ Fonts are separated by a & */
   --accent6-color: white;
 
   /* change the values below to your chosen font(s) */
-  --heading-font:  font-family: "Arial Rounded MT Bold"; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.399999618530273px; } h3 { font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.399999618530273px; } p { font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.571430206298828px; ;
+  --heading-font: "Arial Rounded MT Bold";
   --paragraph-font: Barlow, Helvetica, sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #0e70a5; /* headlines on a white background */
-  --headline-color-on-color: #474747; /* headlines on a colored background */
-  --paragraph-color-on-white: #0e70a5; /* paragraph text on a white background */
-  --paragraph-color-on-color: #474747; /* paragraph text on a colored background */
-  --paragraph-background-color: #f4dca4;
-  --nav-link-color: #474747;
-  --nav-background-color: #f4dca4;
+  --headline-color-on-white: #398897;  /* headlines on a white background */ 
+  --headline-color-on-color: white; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #DCF2DD; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #398897  ;
+  --nav-link-color: black;
+  --nav-background-color: #FFB629;
   --nav-hover-link-color: white;
-  --nav-hover-background-color: #474747;
+  --nav-hover-background-color: #398897;
 }
+
 
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
 body {
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 4em;
   font-size: 18px;
@@ -42,14 +43,8 @@ body {
 img {
   display: block;
   margin: 0 auto;
-  max-width: 300px;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
   color: var(--headline-color-on-white);
 }
@@ -67,97 +62,102 @@ header {
   color: var(--paragraph-color-on-color);
   background-color: var(--paragraph-background-color);
 }
-header > h1,
-header > h2 {
+header > h1, header > h2 {
   color: var(--headline-color-on-color);
 }
+
 p {
   font-family: var(--paragraph-font);
   color: var(--paragraph-color);
   padding: 1em;
 }
 .colors {
-  width: 100%;
-  min-width: 350px;
-  margin: 30px auto;
-  text-align: center;
-}
+    width: 100%;
+    min-width: 350px;
+    margin: 30px auto;
+    text-align: center;
+  }
 .colors th {
-  background-color: #999;
-}
+    background-color: #999;
+  }
 .colors td {
-  width: 25%;
-  height: 3em;
-}
+    width: 25%;
+    height: 3em;
+  }
 table {
-  table-layout: fixed ; width: 100%;
-}
+    table-layout: fixed ; width: 100%;
+  }
 .primary {
-  background-color: var(--primary-color);
-}
+    background-color: var(--primary-color);
+  }
 .secondary {
-  background-color: var(--secondary-color);
-}
+    background-color: var(--secondary-color);
+  }
 .accent1 {
-  background-color: var(--accent1-color);
-}
+    background-color: var(--accent1-color);
+  }
 .accent2 {
-  background-color: var(--accent2-color);
-}
+    background-color: var(--accent2-color);
+  }
 .accent3{
-  background-color: var(--accent3-color);
-}
+    background-color: var(--accent3-color);
+  }
 .accent4{
-  background-color: var(--accent4-color);
-}
+    background-color: var(--accent4-color);
+  }
 .accent5{
-  background-color: var(--accent5-color);
-}
+    background-color: var(--accent5-color);
+  }
 .accent6{
-  background-color: var(--accent6-color);
-}
+    background-color: var(--accent6-color);
+  }
+
 p.colored {
   background-color: var(--paragraph-background-color);
   color: var(--paragraph-color-on-color);
 }
+
 nav {
   background-color: var(--nav-background-color);
   line-height: 3em;
   text-align: center;
   font-size: 1.2em;
 }
-nav {
+nav  {
   list-style-type: none;
   display: flex;
+
 }
 nav a {
-  padding: 1em;
+  padding:1em;
   min-width: 120px;
   text-decoration: none;
   padding: 10px;
+
 }
-nav a:link,
-nav a:visited {
+nav a:link, nav a:visited {
   color: var(--nav-link-color);
 }
 nav a:hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
 }
+
 .sitemap {
   display: grid;
   justify-content: center;
 
   grid-template-columns: repeat(6, 15%);
   grid-template-rows: 3em 1.5em 1.5em 3em;
-  grid-template-areas:
-    ". . home home . ."
+  grid-template-areas: ". . home home . ."
     ". . . top . ."
     ". left left right right ."
     "page2 page2 . . page3 page3";
 }
 .sitemap > div {
+
   text-align: center;
+
 }
 .sm-home {
   grid-area: home;
@@ -174,15 +174,18 @@ nav a:hover {
   background-color: #ccc;
   line-height: 3em;
 }
+
 .top {
   grid-area: top;
   border-left: 1px solid;
 }
+
 .left {
   grid-area: left;
   border-top: 1px solid;
   border-left: 1px solid;
 }
+
 .right {
   grid-area: right;
   border-top: 1px solid;
