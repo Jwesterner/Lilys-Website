@@ -11,6 +11,11 @@
   padding-bottom: 2.5rem;
 }
 
+.logo-img {
+  width: 17%;
+  height: 17%;
+}
+
 body {
   background-color: #f3f3d7;
   margin: 0;
@@ -60,12 +65,13 @@ footer {
 }
 
 .pg-title {
-  font-family: "Arial Rounded MT Bold";
+  font-family: "Arial Rounded MT Bold", Arial, Helvetica, sans-serif;
   color: #396e94;
   text-align: center;
 }
 
 /* Index */
+
 
 #intro-title {
 }
@@ -76,6 +82,45 @@ footer {
   line-height: 25px;
 }
 
-/* About Me */
+/* Gallery */
+
+.gallery-pg-title {
+  font-family: "Arial Rounded MT Bold", Arial, Helvetica, sans-serif;
+  text-align: left;
+  margin: 4%;
+}
+
+
+.gallery-genre{
+  font-family: "Arial Rounded MT Bold", Arial, Helvetica, sans-serif;
+  text-align: center;
+  border-bottom: 2px solid black;
+  margin: 0 auto;
+  display: block;
+  width: fit-content;
+  padding: 0 15px;
+}
+
+#sticker-content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: center;
+  align-items: center;
+  align-content: space-around;
+}
+
+.stickers{
+  width: 15%;
+  height: 100%;
+}
+
+#dwarf{
+  width: 10%;
+}
+
+#rad{
+  width: 20%;
+}
+
 
 /* Upcoming Events */
