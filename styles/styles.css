@@ -82,14 +82,101 @@ footer {
   line-height: 25px;
 }
 
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #717171;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
 /* Gallery */
 
+  /* stickers */
 .gallery-pg-title {
   font-family: "Arial Rounded MT Bold", Arial, Helvetica, sans-serif;
   text-align: left;
   margin: 4%;
+  color: #396e94;
 }
-
 
 .gallery-genre{
   font-family: "Arial Rounded MT Bold", Arial, Helvetica, sans-serif;
@@ -103,24 +190,59 @@ footer {
 
 #sticker-content{
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-items: center;
+  justify-content: center;
+  align-content: flex-start;
   align-items: center;
-  align-content: space-around;
+}
+
+.flex-item {
+  width: 15%;
+  height: 15%;
+  flex-grow: 1;
+  flex-shrink: 0;
+  justify-content: flex-start;
+  padding-left: 20px;
+  align-content: center;
+}
+
+.flex-item figcaption {
+  text-align: center;
+  font-family: "Arial Rounded MT Bold", Arial, Helvetica, sans-serif;
 }
 
 .stickers{
-  width: 15%;
-  height: 100%;
-}
-
-#dwarf{
-  width: 10%;
+  width: 95%;
 }
 
 #rad{
-  width: 20%;
+  width: 120%;
 }
 
+#dwarf {
+  width: 70%;
+}
+
+#duck, #puffer, #swampmonster, #tooth {
+  padding-left: 45px;
+  width: 60%;
+}
+
+  /* Prints */
 
 /* Upcoming Events */
+
+.week{
+  padding: 10px;
+  border-bottom: 2px solid black;
+  display: block;
+  width: fit-content;
+  margin: 0 15px;
+  font-size: 1.8em;
+}
+
+.event{
+  padding-left: 25px;
+  font-size: 1.5em;
+}
