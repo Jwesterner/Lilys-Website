@@ -72,7 +72,7 @@ nav a:hover {
 }
 
 .nav-icon{
-  width: 70px;
+  width: 60px;
   height: 50px;
   background-color: #ffb629;
   border-radius: 10px;
@@ -81,7 +81,7 @@ nav a:hover {
 }
 
 .current-nav {
-  width: 70px;
+  width: 60px;
   height: 50px;
   background-color: white;
   border-radius: 10px;
@@ -319,7 +319,7 @@ footer {
   }
 
   .stickers{
-    width: 80px;
+    width: 90px;
     padding: 0 15%;
   }
   
@@ -328,9 +328,13 @@ footer {
   }
 
   #rad{
-    width: 80px;
+    width: 110px;
   }
   
+  #burger{
+    width: 100px;
+  }
+
   #dwarf {
     width: 70px;
     padding: 0 15%;
