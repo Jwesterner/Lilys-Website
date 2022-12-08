@@ -1,13 +1,13 @@
 /* General Info */
 @import url("https://fonts.googleapis.com/css2?family=Barlow&family=Merriweather:wght@300&display=swap");
 
-#page-container {
+.page-container {
   position: relative;
   min-height: 100vh;
   margin-bottom: 0;
 }
 
-#content-wrap {
+.content-wrap {
   padding-bottom: 2.5rem;
 }
 
@@ -39,6 +39,7 @@ nav {
   justify-content: center;
   align-items: center;
   align-content: center;
+  color: #ffb629;
 }
 
 nav a:visited {
@@ -67,7 +68,7 @@ nav a {
 }
 
 nav a:hover {
-  color: white;
+  color: #396e94;
 }
 
 .nav-icon{
@@ -271,6 +272,7 @@ footer {
 /* Upcoming Events */
 
 .week{
+  font-family: "Arial Rounded MT Bold", Arial, Helvetica, sans-serif;
   padding: 10px;
   border-bottom: 2px solid black;
   display: block;
@@ -282,4 +284,65 @@ footer {
 .event{
   padding-left: 25px;
   font-size: 1.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 900px) {
+  .slideshow-container{
+    display: none;
+  }
+
+  .dot{
+    display: none;
+  }
+
+  footer{
+    height: 2.7rem;
+  }
+
+  #foot-msg{
+    margin: 4px;
+  }
+
+  #sticker-content{
+    flex-flow: row wrap;
+  }
+
+  .stickers{
+    width: 80px;
+    padding: 0 15%;
+  }
+  
+  .flex-item{
+    flex: 1 0 42%;
+  }
+
+  #rad{
+    width: 80px;
+  }
+  
+  #dwarf {
+    width: 70px;
+    padding: 0 15%;
+  }
+  
+  #duck, #puffer, #swampmonster, #tooth {
+    padding: 0 15%;
+    width: 80px;
+  }
+
+  .logo-img{
+    width: 35%;
+  }
+  
 }
